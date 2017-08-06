@@ -1,0 +1,10 @@
+[Unit]
+Description=Yamaha Reciever power
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/av
+
+[Install]
+WantedBy=graphical.target
